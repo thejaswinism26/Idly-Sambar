@@ -18,3 +18,6 @@ app.post("/api/complaint", (req, res) => {
 
 const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const insightsRoutes = require("./routes/insights");
+
+app.use("/insights", insightsRoutes);
